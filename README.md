@@ -1,47 +1,64 @@
-# IoT & Embedded Systems Lab Portfolio
+# IoT Labs Collection
 
-A collection of 14+ IoT projects and experiments ranging from basic sensor interfacing to advanced MQTT-based distributed systems.
+Collection of embedded systems and IoT lab projects covering sensor input, device control, dashboards, MQTT messaging, and simulation workflows.
 
-## 🌟 Featured Projects
+This repository is a portfolio of hands-on experiments rather than one production application. It shows progression from basic GPIO-style logic to distributed MQTT systems with monitoring and alerting patterns.
 
-### 🌊 01. Flood Control with Manual Override (MQTT)
-- **Concept:** A real-time monitoring system for water levels with automated pump control.
-- **Tech:** Python, MQTT (Paho), TLS Security.
-- **Key Feature:** Implements a manual override system allowing remote intervention via a central dashboard.
+## Featured Labs
 
-### 🏠 02. Smart Home Monitoring Dashboard
-- **Concept:** Unified dashboard for indoor environment tracking.
-- **Sensors:** Temperature, Humidity, Light, Motion, Air Quality, and Energy Consumption.
-- **Tech:** Tkinter GUI, Matplotlib (Real-time plotting), JSON data protocol over MQTT.
+### Flood Control With MQTT
 
-### 🏥 03. Remote Patient Monitoring Simulation
-- **Concept:** Telemedicine simulation tracking vital signs (Heart rate, SpO2, Temperature).
-- **Tech:** Data simulation with real-time alerting for critical thresholds.
+Water-level monitoring and pump-control simulation with remote manual override.
 
----
+- Publishes sensor state over MQTT.
+- Supports command messages for manual intervention.
+- Demonstrates the control-loop pattern used in small automation systems.
 
-## 📁 Repository Structure
-- `/src`: Contains the source code for all labs (Python scripts, Arduino sketches, Raspberry Pi configurations).
-- `/docs`: Full lab reports (PDF/Docx) detailing circuit diagrams, logic flows, and results.
+### Smart Home Monitoring Dashboard
 
-## 🛠️ Tech Stack & Protocols
-- **Hardware Simulation:** Raspberry Pi, ESP32, Arduino.
-- **Communication:** MQTT (Secure TLS), HTTP, Serial.
-- **Visualization:** Matplotlib, Tkinter, Streamlit.
-- **Database:** SQLite (Local storage for time-series data).
+Dashboard concept for indoor environment monitoring.
 
-## 📖 Lab List Summary
-1. Toggle Light (Basic GPIO)
-2. Treadmill Simulation
-3. Traffic Lights Logic
-4. Digital Stopwatch
-5. Environment Monitor
-6. Love-O-Meter
-7. Interrupt-based Stopwatch
-8. Smart Irrigation System
-9. Rotary Encoder Interfacing
-10. Traffic Light (Tkinter Integration)
-11. Basic Flood Control
-12. Remote Patient Monitoring
-13. MQTT Flood Control (Secure)
-14. Electricity Generator IoT Simulation
+- Tracks temperature, humidity, light, motion, air quality, and energy-style telemetry.
+- Uses local visualization patterns for real-time status review.
+
+### Remote Patient Monitoring Simulation
+
+Healthcare-style telemetry simulation for vital signs.
+
+- Tracks heart rate, SpO2, and body temperature.
+- Demonstrates threshold-based alert logic.
+
+## Lab Topics
+
+- Basic GPIO control
+- Traffic light state machines
+- Stopwatch and interrupt logic
+- Smart irrigation
+- Rotary encoder input
+- MQTT publish/subscribe
+- Secure messaging concepts
+- Local dashboard visualization
+- Sensor simulation
+
+## Repository Structure
+
+- `src/` - source code and lab scripts
+- `mqtt/` - MQTT-specific experiments
+- `docs/` - supporting lab notes, reports, or diagrams
+
+## Tech Stack
+
+- Python
+- MQTT / Paho MQTT
+- Tkinter
+- Matplotlib
+- SQLite
+- Raspberry Pi / ESP32 / Arduino concepts
+
+## How To Review
+
+Start with the folders under `src/` and `mqtt/`. Each lab is intended to be read independently as a small experiment. For a hiring review, the MQTT flood-control and monitoring-dashboard work best represent the applied automation direction.
+
+## Status
+
+Educational lab collection. Some projects are simulations, while others are intended to map to physical device workflows.
